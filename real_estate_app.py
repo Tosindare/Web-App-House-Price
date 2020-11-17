@@ -109,7 +109,7 @@ st.write(df)
 
 #model_rf = joblib.load("random_forest_regression_model.joblib")
 
-model_ann = tf.keras.models.load_model("ann_model.h5")
+model_ann = tf.keras.models.load_model("ann_model.hdf5")
  
 # def predict_rf():
 #     prediction = model_rf.predict(df)
