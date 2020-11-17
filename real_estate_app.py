@@ -28,8 +28,8 @@ html_temp = """
     <h3 style="color:#666666;text-align:left; line-height: 1.5">
     <p>This Web App will predict house 
     price once the following (16) parameters are inputed.<br> 
-    This is based on ML & DL 
-    algorithms with data from 2014/15 House Sales in King County.</p></h3>
+    This is based on Deep learning 
+    algorithms with data from 2014/15 House Sales in King County, Washington DC.</p></h3>
     </div>
     
     """
@@ -142,6 +142,11 @@ st.text("")
 if st.button('PREDICT PRICE'):
     st.write("**$**", house_price_2, " -*based on Deep Learning Algorithm (89% accuracy)*")
 
+url = 'https://github.com/Tosindare/Web-App-House-Price'
+
+if st.button('Source Code: Github'):
+    webbrowser.open_new_tab(url)
+    
 #st.subheader(')
 
 
