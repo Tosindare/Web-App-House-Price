@@ -144,7 +144,7 @@ if st.button('PREDICT PRICE'):
 
 url = 'https://github.com/Tosindare/Web-App-House-Price'
 
-if st.button('Source Code: Github'):
+if st.button('SOURCE CODE: Github'):
     webbrowser.open_new_tab(url)
     
 #st.subheader(')
