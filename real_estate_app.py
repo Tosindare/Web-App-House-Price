@@ -142,7 +142,7 @@ st.text("")
 if st.button('PREDICT PRICE'):
     st.write("**$**", house_price_2, " -*based on Deep Learning Algorithm (89% accuracy)*")
 
-url = [GitHub]'https://github.com/Tosindare/Web-App-House-Price'
+url = '[GitHub](https://github.com/Tosindare/Web-App-House-Price)'
 
 st.markdown(url, unsafe_allow_html=True)    
 #st.subheader(')
