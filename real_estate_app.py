@@ -102,6 +102,7 @@ def user_input_parameters():
     
 
 df = user_input_parameters()
+df1 = np.array(df)
 
 st.subheader('User Input parameters')
 st.write(df)    
@@ -128,7 +129,7 @@ from sklearn.preprocessing import StandardScaler
 #scalerX = joblib.load('scaler_x1.gz')
 scalerY = joblib.load('scaler_y1.gz')
 scaler = StandardScaler()
-X_df = scaler.fit_transform(df)
+X_df = scaler.fit_transform(df1)
 
 
 def predict_ann():
