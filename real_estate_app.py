@@ -129,7 +129,7 @@ from sklearn.preprocessing import StandardScaler
 scalerX = joblib.load('scaler_x1.gz')
 scalerY = joblib.load('scaler_y1.gz')
 
-X_df = scaler.transform(df1)
+X_df = scalerX.transform(df1)
 
 
 def predict_ann():
