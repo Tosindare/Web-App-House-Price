@@ -125,8 +125,8 @@ st.text("")
 #from sklearn.preprocessing import MinMaxScaler
 
 
-scalerX = joblib.load('scaler_x.gz')
-scalerY = joblib.load('scaler_y.gz')
+scalerX = joblib.load('scaler_x1.gz')
+scalerY = joblib.load('scaler_y1.gz')
 X_df = scalerX.transform(df)
 
 
