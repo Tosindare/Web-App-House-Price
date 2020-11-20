@@ -4,6 +4,7 @@ Created on Fri Oct 23 09:51:13 2020
 
 @author: TosinOja
 """
+import
 import pandas as pd
 import numpy as np
 import streamlit as st
@@ -127,7 +128,7 @@ from sklearn.preprocessing import StandardScaler
 
 #scalerX = joblib.load('scaler_x1.gz')
 scalerY = joblib.load('scaler_y1.gz')
-scaler = standardScaler()
+scaler = StandardScaler()
 X_df = scaler.fit_transform(df)
 
 
