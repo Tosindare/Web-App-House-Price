@@ -122,12 +122,13 @@ st.text("")
 
 
 
-#from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import StandardScaler
 
 
-scalerX = joblib.load('scaler_x1.gz')
+#scalerX = joblib.load('scaler_x1.gz')
 scalerY = joblib.load('scaler_y1.gz')
-X_df = scalerX.transform(df)
+scaler = standardScaler()
+X_df = scaler.fit_transform(df)
 
 
 def predict_ann():
