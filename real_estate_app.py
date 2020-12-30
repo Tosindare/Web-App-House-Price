@@ -2,7 +2,7 @@
 """
 Created on Fri Oct 23 09:51:13 2020
 
-@author: TosinOja
+@author: TosinOjajuni
 """
 import pandas as pd
 import numpy as np
@@ -43,28 +43,15 @@ if st.checkbox('Show Summary of Dataset'):
 
 #@st.cache      
 def user_input_parameters():         
-    bedrooms = st.sidebar.slider("1. No of bedrooms?", 0, 12, 4)
-    #st.write(""" **You selected** """, bedrooms, """**bedrooms**""")
-    
-    bathrooms = st.sidebar.slider("2. No of bathrooms?", 0, 15, 5)
-    #st.write(""" **You selected** """, bathrooms, """**bathrooms**""")
-    sqft_living = st.sidebar.slider("3. Square footage of the house?", 500, 15000,2000)
-    #st.write(""" **You chose** """, sqft_living,"""**Square fts**""")
-        
+    bedrooms = st.sidebar.slider("1. No of bedrooms?", 0, 12, 4)      
+    bathrooms = st.sidebar.slider("2. No of bathrooms?", 0, 15, 5)    
+    sqft_living = st.sidebar.slider("3. Square footage of the house?",500, 15000,2000) 
     sqft_lot = st.sidebar.slider("4. Square footage of the lot?",500, 170000,1200 )
-    #st.write(""" **You wrote** """, sqft_lot,"""**Square fts**""")
     floors = st.sidebar.slider("5. No of floors?", 0, 5, 3)
-    #st.write(""" **You selected** """, floors,"""**floors**""")
-    #views = st.sidebar.slider("6. No of viewings of the house?", 0,10,0)
-    #st.write(""" **You selected** """, views,"""**views**""")
     condition = st.sidebar.slider("7. Overall condition? (1 indicates worn out property and 5 excellent)", 0,5,3)
-    #st.write(""" **You selected** """, condition,"""**as the overall condition of the house**""")
     grade = st.sidebar.slider("8. Overall grade based on King County grading system? (1 poor ,13 excellent)", 0,13,6)
-    #st.write(""" **You selected grade** """, grade)
     sqft_above = st.sidebar.slider("9. Square footage above basement?", 200, 12000, 5000)
-    #st.write(""" **You chose** """, sqft_abovebsmt,"""**Square fts**""")
     sqft_basement = st.sidebar.slider("10. Square footage of the basement?", 0, 7000, 2500)
-    #st.write(""" **You chose** """, sqft_basement,"""**Square fts**""")
     yr_built = st.sidebar.slider("11. Year Built?", 1900,2019, 2009)
     #st.write(""" **You selected** """, yr_built)
     yr_renovated = st.sidebar.radio('12. Year renovated?',('Known', 'Unknown'))
