@@ -26,7 +26,7 @@ st.write("""
 html_temp = """
     <div style = "background - color: #f0f0f5; padding: 5px">
     <h3 style="color:#666666;text-align:left; line-height: 1.5">
-    <p> <b> Choose input parameters by clicking arrow on the Top left Corner. </b><br/ >
+    <p> <b> Choose input parameters by clicking the arrow on the Top left Corner. </b><br/ >
     This Web App will predict house 
     price once the following (16) parameters are inputed.<br> 
     This is based on Deep learning 
