@@ -130,7 +130,7 @@ house_price_2 = predict_ann()
 
 st.text("")
 if st.button('PREDICT PRICE'):
-    st.write("**$**", house_price_2, " -*based on Deep Learning Algorithm (80% accuracy)*")
+    st.write("**$**", house_price_2, " -*based on Deep Learning Algorithm*")
 
 url = '[SOURCE CODE](https://github.com/Tosindare/Web-App-House-Price)'
 
